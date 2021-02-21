@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'link_hant',
+    'user',
     'home',
     'blog', 
 ]
@@ -120,5 +121,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = "/static/"
 STATIC_ROOT = BASE_DIR / "link_hant" / "static"
+MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR / "link_hant" / "media"
+
+AUTH_USER_MODEL = "user.User"
